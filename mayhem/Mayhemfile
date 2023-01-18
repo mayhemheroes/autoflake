@@ -1,0 +1,7 @@
+project: autoflake
+target: check-fuzz
+testsuite:
+    - file://mayhem/testsuite
+cmds:
+  - cmd: /src/mayhem/fuzz_check.py
+    libfuzzer: true
